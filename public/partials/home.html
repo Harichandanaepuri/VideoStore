@@ -1,0 +1,20 @@
+<h1>Home Page</h1>
+<p>
+    <a href="/#/add-video">Add a Video</a>
+</p>
+<ul>
+    <li style="display:inline" ng-repeat='v in video'>
+    		<div  style="float:left; padding: 60px">
+
+<img src='../images/{{v._id}}.jpg' style="width: 200px;height: 200px">
+        <p>{{v.title}}</p><a href="/#/video/{{v._id}}"><p>Edit</p></a>
+    	<a href="/#/video/delete/{{v._id}}">Delete<i class="glyphicon glyphicon-remove"></i></a></div>
+</li>
+</ul>
+
+
+
+
+
+
+
